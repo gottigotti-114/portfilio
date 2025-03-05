@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+  background: linear-gradient(to right, rgb(16, 83, 16),rgb(199, 152, 152));
+  border: 1px solid white;
+  width: auto;
+  height: 600px;
+}
+.main_heading h1{
+  font-size: 80px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  margin: 100px 200px 20px 200px;
+}
+.name_purple{
+  font-size: 130px;
+  color: purple;
+}
+nav li a:hover{
+  color: rgb(227, 255, 16);
+  text-decoration: none;
+  font-size: 80px;
+
+}
+nav li a:active{
+  color: rgb(139, 31, 31);
+  text-decoration: none;
+  font-size: 40px;
+
+}
+nav li a:link{
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+nav li a:visited{
+  color: rgb(21, 4, 4);
+  text-decoration: none;
+  font-size: 40px;
+
+}
+nav li{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 10px 40px 10px 40px;
+  
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+  padding: 40px;
+  margin: 0 40px 0 40px;
+  justify-content: center;
+}
