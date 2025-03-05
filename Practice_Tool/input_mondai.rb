@@ -11,7 +11,9 @@ class Problem_data_in
   def initialize(mon_input = "",bun_input = "",kot_input = "")
     @mondai, @bunya, @kotae = mon_input, bun_input, kot_input
     @mon_num = 0
-    @bunya_all = ["全て"]
+    @bunya_all = [["全て"]] #.strip.split(',')を使うとtest_class.txtを二次元配列として取り込んでしまうため、.firstがうまく活用されなくなってしまうからあえて二次元配列にしておく
+                            #最初から"全て"を入れておくことでbunya_printメソッドを乱用するときに全てという分野を入れてもOKということを分かりやすくする。
+                            #"全て"という分野を作ることでその問題がどの分野でもないことを意味することもできる
   end
   #過去に生成された分野をクラス配列bunya_allに代入
   def bunya_input
@@ -54,6 +56,7 @@ class Problem_data_in
     check_bunya = true
     #もしもtest_classにすでに同じ分野があるなら追加しない
     @bunya_all.each do |bunya_text|
+      puts bunya_text
       if bunya_text.first == @bunya   #firstの意味 ->.each |text|で取り出されるtextには["Hello World"]という形で取り出され、[]や"などの邪魔なものが入っているのでfirstで最初の要素のみを指定する
         check_bunya = false
       end
@@ -217,6 +220,7 @@ while(flag == 1)
   end
 end
 
+#テスト開始モード
 while(flag == 3)
   puts "問題設定"
   print "問題数->"
