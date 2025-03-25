@@ -1,0 +1,6 @@
+My_profile/
+Practice_Tool/
+README.md
+hospital_data_useing/
+janken/
+menu.txt
