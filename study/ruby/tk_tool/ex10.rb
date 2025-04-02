@@ -8,7 +8,7 @@ menubar = TkMenu.new(root)
 root.menu(menubar) #ここで新たにウィンドウにメニューバーを生成
 
 #2.プルダウンメニューの作成
-file_menu = TkMenu.new(menubar,tearoff: 0)
+file_menu = TkMenu.new(menubar,tearoff: 0) #tearoffとはメニューを固定した項目にするか(0)、フレキシブルな設定をするか(!0)
 menubar.add(:cascade, menu: file_menu, label: "ファイル") #cascadeとは項目を押したらプルダウンが展開する方式
 
 #ファイルメニューの各項目追加
