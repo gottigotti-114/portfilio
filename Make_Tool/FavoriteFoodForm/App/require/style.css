@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*全体設定*/
+html{
+  padding-bottom: 100px;
+}
+
+/*メイン設定*/
+.main_header {
+  text-align: center;
+  background-color: antiquewhite;
+}
+/*メイン設定ここまで*/
+
+/*ナビゲーション設定*/
+nav ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav a {
+  display: inline-block; /*transformを適用するためにinline-blockにする*/
+  text-align: center;
+  transition: transform 0.2s ease-out; /*なめらかに動かす*/
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding: 15px 20px 5px 20px;
+  background-color: beige;
+}
+nav a:link{
+  text-decoration: none;
+  color: black;
+}
+nav a:visited{
+  text-decoration: none;
+  color: black;
+}
+nav a:active{
+  text-decoration: none;
+  color: rgb(239, 239, 89);
+}
+nav a:hover{
+  text-decoration: none;
+  color: rgb(131, 131, 16);
+  transform: translateY(-5px); /*5px上に移動*/
+}
+
+/*フォーム設定*/
+.form_box {
+  width: 500px;
+  height: 70px;
+  font-size: 15px;
+}
+
+.submit {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+select{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+/*フォーム設定ここまで*/
+
+/*テーブル設定*/
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+}
+table td,table th{
+  border: 1px solid black;
+}
+table th,table td{
+  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+}
+/*ナビゲーション設定　ここまで*/
+
+/*ゾーン設定*/
+.zone1{
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid rgb(111, 151, 12);
+  background-color: rgb(223, 243, 197);
+}
+.zone2{
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid rgb(20, 134, 16);
+  background-color: rgb(197, 247, 200);
+}
